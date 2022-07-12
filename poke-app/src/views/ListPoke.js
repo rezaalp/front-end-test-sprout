@@ -4,7 +4,7 @@ import PokeItem from "../components/PokeItem";
 import axios from "axios";
 export default function ListPoke() {
   const [data, setData] = useState("");
-  console.log(data);
+
   useEffect(() => {
     async function getPoke() {
       try {
@@ -44,7 +44,6 @@ export default function ListPoke() {
         >
           {data &&
             data.map((el, index) => {
-              console.log(el.name);
               return (
                 <PokeItem url={el.url} name={el.name} key={el.name}></PokeItem>
               );
