@@ -28,9 +28,14 @@ export default function ListPoke() {
         alignItems={"center"}
         direction={"column"}
         justifyContent={"flex-start"}
-        bgColor={"seagreen"}
+        bgColor={"#152237"}
       >
-        <Text marginTop={"40px"} size={"2xl"} fontWeight={"bold"}>
+        <Text
+          color={"white"}
+          marginTop={"40px"}
+          fontSize={"30px"}
+          fontWeight={"bold"}
+        >
           Pokedex
         </Text>
         <Flex
